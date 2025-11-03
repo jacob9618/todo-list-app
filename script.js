@@ -33,4 +33,11 @@ function addTask(event) {
 
     // append list-item div to the list
     todoList.appendChild(listDiv);
+
+    checkbox.addEventListener("change", removeTask);
+}
+
+function removeTask(event) {
+    let checkboxClicked = event.target.id;
+    let checkboxNum = checkboxClicked.charAt(8);
 }
